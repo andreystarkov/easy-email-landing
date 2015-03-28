@@ -59,13 +59,12 @@ module.exports = function(grunt) {
       dist: {
         options: {
           removeComments: true,
-          collapseWhitespace: true
+          collapseWhitespace: true,
+          removeAttributeQuotes: true,
+          minifyJS: true,
+          preserveLineBreaks: true,
+          conservativeCollapse: true
         },
-        files: {
-          'dist/index.html': 'src/index.html'
-        }
-      },
-      dev: {
         files: {
           'dist/index.html': 'src/index.html'
         }

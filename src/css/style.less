@@ -8,7 +8,7 @@
 @headerFont: 'Benguiat Rus';
 @captionFont: 'Romul';
 @textFont: 'Roboto';
-@condFont: 'Open Sans Condensed';
+@condFont: 'Roboto Condensed';
 
 html,body { height: 100%; overflow-x: hidden; }
 body {
@@ -91,6 +91,7 @@ a, input, .icon, .button {
     p {
         font-family: @condFont;
         font-size:20px;
+        opacity:0.8;
         font-style:italic;
     }
     margin-bottom:20px;
@@ -106,7 +107,7 @@ a, input, .icon, .button {
         transition: 0.6s ease-in-out all;
         display:inline-block;
         box-shadow: 0 2px 14px rgba(0,0,0,0.4);
-        border-bottom: 2px solid #888;
+        border-bottom: 2px solid #999;
         perspective: 900px;
         &:hover {
             box-shadow: 0 4px 34px rgba(0,0,0,0.8);
@@ -222,6 +223,29 @@ a, input, .icon, .button {
     content:"";
 }
 @veryRed: fade(desaturate(#BF2A23,20%),90%);
+
+.tip-information {
+    border-radius: 6px;
+    border-bottom: 3px solid darken(@backgroundLight, 10%);
+    box-shadow: 0 1px 8px rgba(0,0,0,0.6);
+    background: @backgroundLight;
+    color: #000;
+    .tooltipster-content {
+        font-family: @condFont, monospace;
+        font-size: 18px;
+        line-height: 22px;
+        font-style:italic;
+        padding: 8px 13px;
+        .ico {
+            float: left;
+            display: inline-block;
+            font-size: 45px;
+            margin-right: 10px;
+            margin-top:12px;
+        }
+    }
+}
+
 .tip-warning {
     border-radius: 6px;
     border-bottom: 3px solid darken(@veryRed, 10%);
