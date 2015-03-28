@@ -39,7 +39,6 @@ $(function() {
       var birth = $('#birth').val();
       var email = $('#email').val();
       var mobile = $('#mobile').val();
-      var phone = $('#phone').val();
       var home = $('#home').val();
 
       if(!$.trim($('#name').val()).length) {
@@ -84,7 +83,6 @@ $(function() {
           data: {
             'name': name,
             'birth': birth,
-            'phone': phone,
             'mobile': mobile,
             'home': home,
             'email': email

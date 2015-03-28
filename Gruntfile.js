@@ -15,6 +15,7 @@ module.exports = function(grunt) {
           'dist/js/all.js': [
             'src/js/libs/_jquery-1.11.2.min.js',
             'src/js/skel/skel.min.js',
+            'src/js/libs/cookie.js',
             'src/js/libs/fontsmoothie.min.js',
             'src/js/libs/tooltipster.min.js',
             'src/js/libs/transit.min.js',
@@ -66,7 +67,8 @@ module.exports = function(grunt) {
           conservativeCollapse: true
         },
         files: {
-          'dist/index.html': 'src/index.html'
+          'dist/index.orig.html': 'src/index.html',
+          'dist/index.html': 'src/index.all.html'
         }
       }
     }

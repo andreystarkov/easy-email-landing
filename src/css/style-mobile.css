@@ -3,6 +3,13 @@
 .box-info h3 span { margin-left: 0; margin-top: 0; }
 .box-info p { font-size: 18px; }
 
+#birth {
+    width: 100% !important;
+    min-width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
 #logo { position: relative; left: auto; top: auto; right: auto; margin: 30px auto;}
 #contact { position: relative; left: auto; top: auto; right: auto; margin: 30px auto;}
 
