@@ -1,0 +1,7 @@
+*.zip
+*.psd
+*.tar.gz
+*.tgz
+_/
+dist/
+node_modules/

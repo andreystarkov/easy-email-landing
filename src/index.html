@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Рублёв</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="img/fav.png" />
+
+        <link rel="stylesheet" href="fonts/simple-line-icons.css">
+        <link rel="stylesheet" href="fonts/romul/romul.css">
+        <link href="http://allfont.ru/css/?fonts=benguiat-rus" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/tooltipster.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+
+        <script src="js/misc/modernizr-2.8.3.min.js"></script>
+        <script src="js/misc/snap.svg-min.js"></script>
+        <script src="js/misc/less.min.js"></script>
+    </head>
+    <body>
+
+        <div class="wrapper" id="header-wrapper">
+            <div class="background"></div>
+            <div id="logo" class="wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                <img src="img/logo.png" alt="Ресторан Рублёв">
+            </div>
+
+            <div class="container box-card" style="display:none">
+                <div class="info">
+                    <h3>Ваша заявка отправлена!</h3>
+                </div>
+                <div class="the-card"><img src="img/card.jpg"></div>
+            </div>
+
+            <div class="form-container container wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.8s">
+                <div id="boxForm" class="box-form">
+                    <div class="box-info">
+                    <h3><span class="icon-credit-card"></span> Анкета для получения клубной карты &laquo;Рублёв&raquo;</h3>
+                    <p>Информация, внесенная в анкету, предназначена только для внутреннего пользования, поддержания контактов с клиентом. Компания гарантирует, что информация не будет передана третьим лицам.</p>
+                    </div>
+                    <form class="getCard" action="#" id="send">
+                        <div class="box">
+                            <input class="input" id="name" type="text" name="name" placeholder="Фамилия, Имя, Отчество">
+                            <span class="icon icon-user"></span>
+                        </div>
+                        <div class="box">
+                            <input id="birth" type="date" onClick="$(this).removeClass('placeholderclass')" class="input dateclass placeholderclass" name="birth" placeholder="Дата рождения">
+                            <span class="icon icon-calendar"></span>
+                        </div>
+                        <div class="box">
+                            <input class="input" id="email" type="email" name="email" placeholder="Электронная почта">
+                            <span class="icon icon-envelope"></span>
+                        </div>
+                        <div class="box">
+                        <input class="input" id="mobile" type="tel" name="mobile" placeholder="Мобильный номер телефона">
+                            <span class="icon icon-screen-smartphone"></span>
+                        </div>
+                        <div class="box">
+                        <input class="input" id="phone" type="tel" name="phone" placeholder="Стационарный номер телефона">
+                            <span class="icon icon-call-end"></span>
+                        </div>
+                        <div class="box">
+                        <input class="input" id="home" type="text" name="home" placeholder="Адрес проживания">
+                            <span class="icon icon-home"></span>
+                        </div>
+                        <div id="button-send" class="button animated">Отправить</div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="contact" class="wow rotateInDownRight" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                <div class="phone">
+                    <span class="icon icon-call-in"></span> 600-555
+                </div>
+
+                <div class="place">
+                    <span class="icon icon-pin"></span>Коммунаров 51
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/libs/_jquery-1.11.2.min.js"></script>
+        <script src="js/libs/transit.min.js"></script>
+        <script src="js/libs/wow.min.js"></script>
+        <script src="js/libs/fontsmoothie.min.js"></script>
+        <script src="js/libs/tooltipster.min.js"></script>
+        <script src="js/skel/skel.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+        (function($) {
+
+            new WOW().init();
+
+            skel.init({
+                reset: 'full',
+                breakpoints: {
+                    'global':   { range: '*', href: 'css/style.css' },
+                    'desktop':  { range: '737-', href: 'css/style-desktop.css', containers: 500, grid: { gutters: 25 } },
+                    '1000px':   { range: '737-1200', href: 'css/style-medium.css', containers: 900,
+                    grid: { gutters: 20 }, viewport: { width: 1080 }},
+                    'mobile':   { range: '-736', href: 'css/style-mobile.css', containers: '100%!',
+                    grid: { collapse: true, gutters: 20 }, viewport: { scalable: false } }
+                }
+            });
+
+        })(jQuery);
+        </script>
+    </body>
+</html>
